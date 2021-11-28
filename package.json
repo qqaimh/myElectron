@@ -9,6 +9,7 @@
     "watch": "ng build --watch --configuration development",
     "start:electron": "ng build --base-href ./ && electron .",
     "packager": "electron-packager ./dist/myElectron myElectron --platform=win32 --arch=x64 --app-version=1.0.0 --overwrite --out=./dist",
+    "packager:asar": "electron-packager ./dist/myElectron myElectron --platform=win32 --arch=x64 --app-version=1.0.0 --asar --overwrite --out=./dist",
     "test": "ng test"
   },
   "private": true,
